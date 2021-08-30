@@ -1,0 +1,66 @@
+h1 {
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+body {
+    padding-left: 200px;
+    padding-right: 100px;
+}
+
+
+/* Fixed Sidebar menu - if I want to continue; 
+https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp */
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: coral;
+    overflow-x: hidden; /* Disable horisontal scroll */
+    padding-top: 100px;
+    padding-left: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    font-size: 15px;
+    font-family: Garamond, serif;
+    color: darkblue;
+}
+
+li {
+    color: tomato;
+}
+
+h2 {
+    color: blue;
+    padding-top: 40px;
+}
+
+p {
+    font-family: Garamond, serif;
+    padding-right: 30%;
+    text-align: justify;
+    padding-top: 10px;
+
+}
+
+.portrait {
+    padding-right: 10px;
+}
+
+/* Still want to fix: 
+    bio picture side by side with text
+    nicer looking h2, h1, sidenav...
+    add something to header?
+    footer!
+    sort text + text alignment
+    sort padding, % instead of px...? */
+
+
