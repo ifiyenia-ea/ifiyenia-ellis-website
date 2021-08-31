@@ -1,7 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link type="text/css" rel="stylesheet" href="styles/normalize.css">
+    <!--
+        Wasn't sure how best to add the "normalizer",
+        found a few different ways but tried it like this this time,
+        following instructions on
+        https://stackoverflow.com/questions/17072728/where-do-i-include-normalize-css/17072804
+        and
+        https://www.hongkiat.com/blog/normalized-css/
+        hoping it turned out correct :-)
+
+
+    -->
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zeo0yup.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zeo0yup.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +24,17 @@
 
 <body>
     <header>
-        <h1>Ifiyenia Ellis - Author</h1>
-
+    
+        <h1 id="Home">Ifiyenia Ellis - Author</h1>
+        
         <div class="sidenav">
+            <a href="http://www.instagram.com/ifiyenia_skriver">
+            <img src="images/instagram-logo.png" alt="instagram logo" title="Link to Instagram profike" style="width:100px;height:100px;" /> </a>
           <a href="#Biography"> Biography</a>
           <br>
           <a href="#Bibliography"> Bibliography</a>
+          <br>
+          
         </div>
         
      
@@ -37,9 +56,15 @@
     
     <main>
         <section>
-           <h2 id="Biography"> BIOGRAPHY </h2>
-            <img src="images/ifiyenia-2.jpeg" alt="portrait woman" title="Ifiyenia Ellis portrait" width="350px" 
-                align="left" class="portrait">
+           <h2 id="Biography"> Biography </h2>
+           <div class="container">
+           <img src="images/ifiyenia-2.jpeg" alt="portrait woman" title="Ifiyenia Ellis portrait" width="350px" align="left" class="portrait">
+
+            <!--
+                For this picture I can't figure out why the "align" seems to be wrong but still works...
+
+            -->
+
 
             <p class="bio">
                 Ifiyenia Ellis was born in 1986, growing up in a northern suburb of Stockholm, Sweden,
@@ -59,17 +84,24 @@
                 force that she no longer could duck away from it. She started writing what would become I hand med min syster
                 and then the dream was no longer just a dream - it became a goal, something she has worked hard to reach
                 ever since.
-            </p>
-        
+                <br>
+                <br>
+                <h4><a href="#Home"> Home </a></h4>
+
             
+            </p>
+            </div>
         </section>
 
+        
         <section>
-            <h2 id="Bibliography"> BIBLIOGRAPHY </h2>
-            <p>TIDSSTILLNADEN <br>
+            <h2 id="Bibliography"> Bibliography </h2>
+            <div class="container">
+
+            <h3>TIDSSTILLNADEN <br></h3>
                 <img src="images/tidsstillnaden.jpg" alt="photo of novel" title="Tidsstillnaden book cover" width="500px">
                 <br>
-                Tidsstillnaden is a novel about 36 year old Alexandra, haunted by dreams and 
+                <p><i>Tidsstillnaden</i> is a novel about 36 year old Alexandra, haunted by dreams and 
                 visions of unknown source, waking up each morning without having slept. Sometimes,
                 with pages in front of her, letters written from the subconscious.
                 At young age she moved to England in hopes of finding answers about her missing mother,
@@ -78,31 +110,42 @@
                 after months of job searching, starts working in the reception of what once was the
                 psychiatric clinic where her mother had been held against her will, it gets even worse...
                 <br> What truths are waiting for her, and who do the other voices belong to?
-            
+                <br>
+                <h4><a href="#Home"> Home </a></h4>            
             </p>
+            </section></div>
 
-
-            <p>GRYNINGSFÅGLAR, series
-                <br> <img src="images/ihmms.jfif" alt="photo of novel" title="I hand med min syster book cover" width="500px>">
-                <br> The series Gryningsfåglar starts with the novel I HAND MED MIN SYSTER, set in a close future
+            <div class="container">
+            <h3>GRYNINGSFÅGLAR, <i>series</i></h3>
+                <br> 
+                <img src="images/ihmms.jfif" alt="photo of novel" title="I hand med min syster book cover" width="500px>">
+                <br>
+                <p>The series <i>Gryningsfåglar</i> starts with the novel <i> I HAND MED MIN SYSTER</i>, set in a close future
                 where Europe, after a third world war, has been divided into two countries - Oriente, the eastern side,
                 and Okcidente, the western side.
                 <br>I hand med min syster starts with Miranda, still grieving the loss of her sister, who passed away
                 less than a year earlier. Military on the streets, closed borders and strict rules with harsh penalties for the ones
                 breaking them 
-            </p>
+                <br>
+                <h4><a href="#Home"> Home </a></h4>
+            </p></div>
 
-            <p>EM OCH ELLE, series
-                <br> <img src="images/Em-och-Elle.png" alt="children's book cover" title="Em och Elle book cover" width="500px">
-                <br>The children's books about the two sisters, Em and Elle, are somewhat inspired
-                by the authors two daughters; the first book about the two going for a picnic
-                in the forest came after watching the two girls playing in the lounge of their 
-                apartment, where they pretended to be at a picnic. However, the Forest Spirit that the pair 
-                meet in the book, is completely fictional... or is it?
+            <div class="container">
+                <h3>EM OCH ELLE, <i>series</i></h3>
+                <br> 
+                <img src="images/Em-och-Elle.png" alt="children's book cover" title="Em och Elle book cover" width="500px">
+                <br>
+                <p>The children's books about the two sisters, Em and Elle, are somewhat inspired
+                by the authors two daughters; the idea for the first book <i>Em och Elle möter en skogsande</i> 
+                came after watching the two girls playing in the lounge of their apartment, having a pretend picnic. 
+                However, the Forest Spirit that the pair meet in the book, is completely fictional... <em>or is it?</em>
                 <br>The series continues to follow the two in different settings, facing new problems
                 which are connected to real world issues such as climate change, and what can happen
                 if you don't look after nature and our Mother Earth.
-            </p>
+                <br></p>
+                <h4><a href="#Home"> Home </a></h4>
+           
+            </div>
 
 
         </section>
@@ -115,6 +158,9 @@
 
 
     <footer>
+        
+
+
 
     </footer>
 
